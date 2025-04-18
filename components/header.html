@@ -1,0 +1,76 @@
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="css/styles.css" />
+  <title>Login</title>
+
+</head>
+
+<body>
+<header class="header-bar">
+  
+<div style="width: 1890px; height: 61px; padding: 15px; background: rgba(0, 0, 0, 0.247); border-radius: 10px; justify-content: space-between; align-items: center; display: inline-flex; position: fixed; z-index: 1000">
+    <div style="height: 41px; justify-content: flex-start; align-items: flex-start; gap: 22px; display: flex">
+      <div style="width: 37px; height: 37px; background: radial-gradient(ellipse 84.37% 126.70% at 50.00% 50.00%, rgba(56, 48, 48, 0.2) 10%, rgba(0, 0, 0, 0) 100%), linear-gradient(to bottom right, white 0%, rgba(228.44, 217.02, 199.88, 0) 50%) bottom right / 50% 50% no-repeat, linear-gradient(to bottom left, white 0%, rgba(228.44, 217.02, 199.88, 0) 50%) bottom left / 50% 50% no-repeat, linear-gradient(to top left, white 0%, rgba(228.44, 217.02, 199.88, 0) 50%) top left / 50% 50% no-repeat, linear-gradient(to top right, white 0%, rgba(228.44, 217.02, 199.88, 0) 50%) top right / 50% 50% no-repeat; box-shadow: 0px 4px 6px rgba(162.56, 221.72, 255, 0.32) inset; border-radius: 9999px"></div>
+      <div style="color: #FFF8F8; font-size: 40px; font-family: Iceland; font-weight: 400; word-wrap: break-word"><a style="color: white; text-decoration: none;" href ="index.html"> Solaris </a> </div>
+    </div>
+    <div style="justify-content: flex-start; align-items: flex-start; gap: 60px; display: flex">
+      <nav>
+      <div style="padding: 10px; background: rgba(117.94, 117.94, 117.94, 0); border-radius: 23px; justify-content: flex-start; align-items: flex-start; gap: 10px; display: flex">
+        <div style="color: white; font-size: 36px; font-family: Iceland; font-weight: 400; word-wrap: break-word"><a style="color: white; text-decoration: none;" href = "tickets.html">Tickets</a> </div>
+      </div>
+    </nav>
+    <nav>
+      <div style="padding: 10px; background: rgba(117.94, 117.94, 117.94, 0); border-radius: 23px; justify-content: flex-start; align-items: flex-start; gap: 10px; display: flex">
+        <div style="color: white; font-size: 36px; font-family: Iceland; font-weight: 400; word-wrap: break-word"><a style="color: white; text-decoration: none;" href = "shop.html">Shop</a></div>
+      </div>
+      </nav>
+      <nav>
+      <div style="padding: 10px; background: rgba(117.94, 117.94, 117.94, 0); border-radius: 23px; justify-content: flex-start; align-items: flex-start; gap: 10px; display: flex">
+        <div style="color: white; font-size: 36px; font-family: Iceland; font-weight: 400; word-wrap: break-word"><a style="color: white; text-decoration: none;" href = "info.html">Info</a> </div>
+      </div>
+      </nav>
+    </div>
+    <div style="justify-content: flex-start; align-items: center; gap: 48px; display: flex">
+
+      <div class="login-link" style="color: white; font-size: 36px; font-family: Iceland; font-weight: 400;">
+        <a id="openLoginBtn" style="cursor: pointer; text-decoration: none; color: white;">LogIn</a>
+      </div>
+
+      <div style="padding-left: 20px; padding-right: 20px; padding-top: 15px; padding-bottom: 15px; background: white; border-radius: 10px; justify-content: flex-start; align-items: flex-start; gap: 10px; display: flex">
+        <div style="color: rgba(0, 0, 0, 0.20); font-size: 36px; font-family: Iceland; font-weight: 400; word-wrap: break-word"><a style="color: rgb(0, 0, 0); text-decoration: none;" href = "">SignIn</a></div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="modal-overlay" id="loginOverlay">
+  <div class="modal">
+    <button style="width: 37.78px; height: 37.52px; left: 320.35px; top: 15px; position: absolute; background: none;" onclick="closeModal()"><img src="assets\images\svgeus\Crossred.svg"></button>
+    <h2>Log In</h2>
+    <input type="text" placeholder="Nickname" />
+    <input type="email" placeholder="Gmail" />
+    <br />
+    <button class="login-btn">Log In</button>
+    <button class="register-btn">Register</button>
+  </div>
+</div>
+
+
+      <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          const openBtn = document.getElementById('openLoginBtn');
+          const overlay = document.getElementById('loginOverlay');
+    
+          openBtn.addEventListener('click', () => {
+            overlay.style.display = 'flex';
+          });
+        });
+    
+        function closeModal() {
+          const overlay = document.getElementById('loginOverlay');
+          overlay.style.display = 'none';
+        }
+      </script>
+
+</body>

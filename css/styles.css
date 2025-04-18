@@ -1,0 +1,159 @@
+body {
+  margin: 0;
+  background-color: #1e2a34;
+  font-family: "iceland", sans-serif;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+}
+
+.search-box {
+  position: absolute;
+  top: 226px;
+  left: 259px;
+  width: 1402px;
+  height: 139px;
+  background-color: #2f4a4e;
+  padding: 20px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: white;
+  box-sizing: border-box;
+}
+
+.trip-type {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-size: 20px;
+}
+
+.trip-type input[type="radio"] {
+  accent-color: #adeeea;
+}
+
+.inputs {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.input-box {
+  display: flex;
+  align-items: center;
+  background-color: #dceced;
+  color: black;
+  border-radius: 6px;
+  padding: 10px;
+  flex: 1;
+  min-width: 150px;
+  max-width: 220px;
+  gap: 8px;
+}
+
+.input-box select,
+.input-box input {
+  border: none;
+  background: transparent;
+  outline: none;
+  flex: 1;
+  font-size: 20px;
+}
+
+.search-button {
+  background-color: #3d3d3d;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+  background-color: #575757;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Iceland&display=swap');
+
+.modal-overlay {
+  position: fixed;       /* фиксированное положение на весь экран */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9999;         /* выше почти всего */
+  display: none;         /* будет показано через JS */
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  width: 361px;
+  height: 520px;
+  background-color: #b4cfcb;
+  border-radius: 20px;
+  padding: 30px 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: white;
+  font-family: 'Iceland', sans-serif;
+}
+
+.modal input {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+  font-size: 18px;
+  font-family: 'Iceland', sans-serif;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+
+.modal button {
+  width: 90%;
+  padding: 12px;
+  margin: 8px 0;
+  font-size: 22px;
+  font-family: 'Iceland', sans-serif;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.login-btn {
+  background-color: #1e1e1e;
+  color: white;
+}
+
+.register-btn {
+  background-color: #a897e3;
+  color: white;
+}
+
+.close-btn {
+  top: 15px;
+  right: 15px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 30;
+  width: 32px;
+  height: 32px;
+  font-size: 20px;
+  cursor: pointer;
+}
